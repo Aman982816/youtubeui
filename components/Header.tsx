@@ -45,7 +45,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="sticky top-0 z-10 flex flex-row items-center justify-between h-14 px-1 md:px-4 md:px-5 bg-white dark:bg-black">
+    <div className="sticky top-0 z-10 flex flex-row items-center justify-between h-14 px-1 md:px-4 md:px-5 bg-black dark:bg-black">
       {loading && <Loader />}
 
       <div className="flex h-5 items-center ">
@@ -64,7 +64,7 @@ const Header = () => {
 
         <Link href={"/"} className="flex h-5 w-10 md:w-16 items-center">
           <Image
-            className="h-full hidden dark:md:block"
+            className="h-full hidden md:block dark:md:block"
             src={ytLogo}
             alt="logo"
           />
@@ -86,7 +86,7 @@ const Header = () => {
           />
         </div>
         <button
-          className="w-[40px] md:w-[60px] h-8 md:h-10 flex items-center justify-center border border-l-0 border-[#303030] rounded-r-3xl bg-white/[0.1]"
+          className="w-[40px] md:w-[60px] h-8 md:h-10 flex items-center text-black justify-center border border-l-0 border-[#303030] rounded-r-3xl bg-white/[0.1]"
           onClick={() => searchQueryHandler("searchButton")}
         >
           <IoIosSearch className="text-white text-xl" />
